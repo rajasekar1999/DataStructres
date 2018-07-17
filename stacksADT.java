@@ -1,10 +1,7 @@
 import java.util.Scanner;
  
 class StackFinal2 {
- 
-	/**
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -72,32 +69,31 @@ class CapacityGetterSetter {
 }
  
 class StackArray<E> implements stack<E> {
-	// public static final int CAPACITY=20;
+	
 	CapacityGetterSetter getset = new CapacityGetterSetter();
-	private E[] data; // array container
-	// enter index to top position
+	private E[] data; 
 	int t=-1;
-	// constructor
+	
 	int CAPACITY=0;
  
 	public StackArray() {
 		CAPACITY = getset.getCapacity();
 		data = (E[]) new Object[CAPACITY];
-		//initialize the data array
+		
 	}
  
 	public int size() {
-		// TODO Auto-generated method stub
+		
 		return t+1;
 	}
  
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
+		
 		return t==-1;
 	}
  
 	public void push(E e) {
-		// TODO Auto-generated method stub
+		
 		if (t+1==CAPACITY){
 		System.out.println("StackFullException");
 		}
@@ -109,7 +105,7 @@ class StackArray<E> implements stack<E> {
 	}
  
 	public E top() {
-		// TODO Auto-generated method stub
+		
 		if(t==-1){
 		System.out.println("StackEmptyException");
 		}
@@ -120,7 +116,7 @@ class StackArray<E> implements stack<E> {
 	}
  
 	public E pop() {
-		// TODO Auto-generated method stub
+		
 		if(t==-1){
 		System.out.println("StackEmptyException");
 		}
@@ -150,7 +146,6 @@ class StackArray<E> implements stack<E> {
 		int m= (t+1)/2;
 		int count=0;
 		E a[] = (E[])new Object[t];
-		// TODO Auto-generated method stub
 		E abc;
 		for(int i=0;i<m;i++)
 		{
