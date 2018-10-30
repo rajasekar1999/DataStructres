@@ -1,11 +1,9 @@
-import java.util.*;
  import java.io.*;
  class test {
  public static void main(String args[])throws IOException {
  DLL<Integer> list = new Doubly<Integer>();
  Scanner sc=new Scanner(System.in);
- InputStreamReader in = new InputStreamReader(System.in);
- BufferedReader br = new BufferedReader(in);
+ BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
  int test= Integer.parseInt(br.readLine());
  int inp= Integer.parseInt(br.readLine());
  for(int j=0;j<test;j++) {
